@@ -1,0 +1,45 @@
+Rstudio Presenter for Data Products project
+========================================================
+author: Pankaj Kumar Singh
+date: Jan/07/2017
+autosize: true
+
+First Slide
+========================================================
+This application predicts the horsepower of a car given the fuel
+efficiency in miles per gallon for the car.
+
+This reproducible pitch presentation is linked to an application designed for a company to reduce cost on car rental expenses
+
+
+- The app developed for the first part of the assignment is avalilable         at: https://patchanou.shinyapps.io/appDir
+- Source code for ui.R and server.R files are available on the GitHub at: https://github.com/patrickchanou/Developing-Data-Products
+- Show/Hide Model 2 controlled by checkbox2
+- FThe mtcars dataset is included in R
+
+Slide With Code
+========================================================
+
+```{r}
+head(mtcars)
+```
+
+Slide With Plot
+========================================================
+
+```{r}
+
+plot(mtcars$mpg, mtcars$hp, xlab = "Miles Per Gallon",
+ylab = "Horsepower", bty = "n", pch = 16,
+xlim = c(10, 35), ylim = c(50, 350))
+
+        
+```
+Final slide with conclusion
+========================================================
+
+This presentation is created as the final project of Developing Data Products Course, from Coursera. This app is supposedly used for a company to reduce cost on car rental using mtcars dataset included in the R system. The first step is for the company to input the distance of the destination and the price of gasoline at the location. Such information will be used to compute the Gasoline Expenditure for each car brand in the mtcars dataset. Also, the company inputs the maximum amount of money to be spent on gasoline, which is shown on the table depending on cars that can reach a mpg below that amount. The second step is to select the features of desired cars such as cylinders, displacement, horse power and transmission. Accordingly, the table will only show cars that match those features. It is possible to sort the table using a selected variable using the arrows at the top of the tabl
+
+
+
+
